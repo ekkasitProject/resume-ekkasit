@@ -28,3 +28,7 @@
 .animate-borderAnimation {
   animation: borderAnimation 20s infinite; /* 2s คือระยะเวลาของ animation */
 }
+/* Projects.module.css */
+.scrollImage {
+  overflow: auto; /* Enable scrolling */
+}

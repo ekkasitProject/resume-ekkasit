@@ -4,9 +4,12 @@ const Navbar = () => {
   return (
     <nav className="flex justify-between shadow-xl  mx-auto p-7 ">
       <div className="pl-4">
-        <h1 className="text-neutral-900 text-xl font-bold hover:text-sky-600 ease-in-out">
+        <Link
+          href="/"
+          className="text-neutral-900 text-xl font-bold hover:text-sky-600 ease-in-out"
+        >
           Ekkasit.dev
-        </h1>
+        </Link>
       </div>
       <div>
         <div className="flex justify-between pr-4 w-[300px]">
