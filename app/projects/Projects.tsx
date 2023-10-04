@@ -55,7 +55,7 @@ const Projects = () => {
           <p className="text-center text-neutral-500 mt-5">
             A website related to pet boarding with a booking system is an online
             platform that allows users to conveniently book pet boarding
-            services for their beloved animals through the website's online
+            services for their beloved animals through the website&apos;s online
             booking system.
           </p>
           <div className=" flex justify-around mt-5">
