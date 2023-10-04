@@ -21,8 +21,8 @@ const Introduction = () => {
           </div>
           <div className="mt-10">
             <span className="text-xl text-gray-600">
-              Hi, I'm Ekkasit ponkhunthod, Fullstack <br /> Developer in Nakhon
-              Ratchasima, Thailand. 📍
+              Hi, I&apos;m Ekkasit ponkhunthod, Fullstack <br /> Developer in
+              Nakhon Ratchasima, Thailand. 📍
             </span>
           </div>
           <div className="flex mt-10 w-[100px] justify-around">
