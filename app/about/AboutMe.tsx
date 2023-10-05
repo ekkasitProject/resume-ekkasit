@@ -3,13 +3,13 @@ import React from "react";
 import Image from "next/image";
 const AboutMe = () => {
   return (
-    <div className="w-[1000px] h-[500px] mx-auto mt-32 ">
-      <div className="flex justify-between p-5">
-        <div className="w-[450px]">
+    <div className="md:w-[1000px] h-[500px] mx-auto mt-10  md:mt-32 md:h-[700px]">
+      <div className="flex flex-col md:flex-row items-center md:justify-between p-5">
+        <div className="w-[300px] md:w-[450px]">
           <Image src="/about.jpg" alt="" width={450} height={100} />
         </div>
-        <div className="w-[450px]">
-          <h2 className="text-blue-700 text-2xl font-bold">ABOUT ME</h2>
+        <div className="text-center md:w-[450px]">
+          <h2 className="mt-5 text-blue-700 text-2xl font-bold">ABOUT ME</h2>
           <h3 className="text-neutral-900 text-xl font-bold mt-5">
             A dedicated Fullstack Developer based in Nakhon Ratchasima, Thailand
             📍

@@ -29,18 +29,21 @@ const Projects = () => {
   };
 
   return (
-    <div className="w-[1000px] mx-auto mt-32">
+    <div className="w-full md:w-3/5 mx-auto mt-8 md:mt-32">
       <div>
-        <h2 className="text-blue-700 text-2xl font-bold">PORTFOLIO</h2>
-        <h3 className="text-neutral-900 text-2xl font-bold mt-5">
+        <h2 className="text-blue-700 text-2xl pl-2 md:pl-0 font-bold">
+          PORTFOLIO
+        </h2>
+        <h3 className="text-neutral-900 text-2xl  pl-2 md:pl-0  font-bold mt-5">
           Each project is a unique piece of development 🧩
         </h3>
       </div>
-      <div className="flex justify-center p-5 my-5 bg-gray-100 mt-5 shadow-md rounded-lg">
-        <div className="w-[500px] h-[350px] relative overflow-hidden">
+
+      <div className="flex flex-col md:flex-row justify-center p-5 my-5 bg-gray-100 mt-5 shadow-md rounded-lg">
+        <div className="w-auto md:w-[500px] h-[350px] relative overflow-hidden">
           <div
             className={`w-full h-full relative transition-transform duration-1000 ease-in-out transform ${
-              isHovered.project1 ? "translate-y-[-180%]" : "translate-y-0"
+              isHovered.project1 ? "translate-y-[-140%]" : "translate-y-0"
             }`}
             onMouseEnter={() => handleMouseEnter("project1")}
             onMouseLeave={() => handleMouseLeave("project1")}
@@ -48,12 +51,12 @@ const Projects = () => {
             <Image src="/petsitter.png" alt="" width={550} height={80} />
           </div>
         </div>
-        <div className="w-[450px] px-20 mt-5">
+        <div className="w-full md:w-[450px] md:px-20 mt-5">
           <h4 className="text-center text-lg font-bold">
             🐶Pet Sitter(SEPTEMBER 2023)
           </h4>
           <p className="text-center text-neutral-500 mt-5">
-            A website related to pet boarding with a booking system is an online
+            A website booking to pet boarding with a booking system is an online
             platform that allows users to conveniently book pet boarding
             services for their beloved animals through the website&apos;s online
             booking system.
@@ -63,7 +66,10 @@ const Projects = () => {
               React
             </span>
             <span className="p-2 w-[80px] text-center shadow-xl bg-white rounded-lg">
-              SCSS
+              tailwind
+            </span>
+            <span className="p-2 w-[80px] text-center shadow-xl bg-white rounded-lg">
+              Nodejs
             </span>
           </div>
           <div className=" flex justify-around mt-10 ">
@@ -87,50 +93,46 @@ const Projects = () => {
         </div>
       </div>
 
-      <div className="flex justify-center p-5 my-5 bg-gray-100 mt-5 shadow-md rounded-lg">
-        <div className="w-[450px] px-20 mt-5">
-          <h4 className="text-center">
-            <b>CAR RENTAL</b> (FEBRUARY 2023) 🚗
+      <div className="flex flex-col-reverse md:flex-row justify-center p-5 my-5 bg-gray-100 mt-10 shadow-md rounded-lg">
+        <div className="w-full md:w-[450px] md:px-20 mt-5">
+          <h4 className="text-center text-lg font-bold">
+            🐶E-Commerce (July 2021)
           </h4>
           <p className="text-center text-neutral-500 mt-5">
-            A car rental website is an online platform that allows users to rent
-            cars for personal or business use. The website provides an interface
-            for searching, comparing, and reserving cars.
+            Creating an efficient and user-friendly online shopping platform
+            tailored to meet the specific needs and requirements of the company.
           </p>
-          <div className=" flex justify-around mt-5">
-            <span className="p-2 w-[80px] text-center shadow-xl  bg-white rounded-lg">
-              React
-            </span>
-            <span className="p-2 w-[80px] text-center shadow-xl bg-white rounded-lg">
-              SCSS
-            </span>
+
+          <div className=" flex flex-col  justify-around md:mt-0">
+            <p className="mx-auto p-2 w-[80px] text-center shadow-xl md:my-3  bg-white rounded-lg">
+              Django
+            </p>
+            <p className="p-2 w-full text-center shadow-xl  bg-red-800 text-white rounded-lg">
+              University graduation project
+            </p>
           </div>
           <div className=" flex justify-around mt-10 ">
             <Link
-              href={"https://github.com/ekkasitProject"}
+              href={
+                "https://github.com/ekkasitProject/finalproject-django-e-commerce"
+              }
               className=" w-[150px] flex justify-center items-center  hover:text-sky-600 ease-in-out"
+              target="_blank"
             >
               Code
               <FiGithub className="text-2xl hover:text-sky-600 ease-in-out pl-2" />
             </Link>
-            <Link
-              href={"/"}
-              className=" w-[150px] flex justify-center items-center hover:text-sky-600 ease-in-out"
-            >
-              Live Demo
-              <FaExternalLinkAlt className="text-2xl hover:text-sky-600 ease-in-out pl-2" />
-            </Link>
           </div>
         </div>
-        <div className="w-[500px] h-[350px] relative overflow-hidden">
+        <div className="w-auto md:w-[500px] h-[350px] relative overflow-hidden">
           <div
             className={`w-full h-full relative transition-transform duration-1000 ease-in-out transform ${
-              isHovered.project2 ? "translate-y-[-100%]" : "translate-y-0"
+              isHovered.project2 ? "translate-y-[-60%]" : "translate-y-0"
             }`}
             onMouseEnter={() => handleMouseEnter("project2")}
             onMouseLeave={() => handleMouseLeave("project2")}
           >
-            <Image src="/about.jpg" alt="" width={550} height={80} />
+            <Image src="/django.png" alt="" width={550} height={80} />
           </div>
         </div>
       </div>

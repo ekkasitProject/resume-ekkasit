@@ -3,14 +3,14 @@ import { AiOutlineLinkedin } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
 const Footer = () => {
   return (
-    <div className="bg-neutral-800">
-      <div className="w-3/4 flex justify-between mx-auto p-14">
-        <div className="w-[400px]">
+    <div className="bg-neutral-800 mt-52 md:mt-0">
+      <div className="md:w-3/4 flex justify-between mx-auto p-14">
+        <div className="md:w-[400px]">
           <h3 className="text-white font-bold">
             Copyright © 2023. All rights are reserved.
           </h3>
         </div>
-        <div className="flex justify-between text-white w-[70px]">
+        <div className="flex justify-between text-white md:w-[70px]">
           <Link
             href="https://www.linkedin.com/in/ekkasit-ponkhunthod"
             target="_blank"
