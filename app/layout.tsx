@@ -1,13 +1,13 @@
 import "./globals.css";
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Changa } from "next/font/google";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
-const inter = Inter({ subsets: ["latin"] });
+const changa = Changa({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: "Resume Ekkasit.dev",
-  description: "Resume Ekkasit.dev",
+  title: "Ekkasit.dev",
+  description: "Ekkasit.dev",
 };
 
 export default function RootLayout({
@@ -17,7 +17,7 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body className={changa.className}>
         <Navbar />
         {children}
         <Footer />

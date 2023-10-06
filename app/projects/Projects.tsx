@@ -96,7 +96,7 @@ const Projects = () => {
       <div className="flex flex-col-reverse md:flex-row justify-center p-5 my-5 bg-gray-100 mt-10 shadow-md rounded-lg">
         <div className="w-full md:w-[450px] md:px-20 mt-5">
           <h4 className="text-center text-lg font-bold">
-            🐶E-Commerce (July 2021)
+            🛒E-Commerce (July 2021)
           </h4>
           <p className="text-center text-neutral-500 mt-5">
             Creating an efficient and user-friendly online shopping platform
@@ -104,7 +104,7 @@ const Projects = () => {
           </p>
 
           <div className=" flex flex-col  justify-around md:mt-0">
-            <p className="mx-auto p-2 w-[80px] text-center shadow-xl md:my-3  bg-white rounded-lg">
+            <p className="mx-auto p-2 w-[80px] text-center shadow-xl my-3  bg-white rounded-lg">
               Django
             </p>
             <p className="p-2 w-full text-center shadow-xl  bg-red-800 text-white rounded-lg">

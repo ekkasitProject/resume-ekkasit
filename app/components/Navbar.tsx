@@ -56,7 +56,7 @@ const Navbar = () => {
           </Link>
         </span>
       </div>
-      <div className="md:hidden">
+      <div className="flex items-center md:hidden">
         {/* Hidden on Desktop */}
         <RxHamburgerMenu
           className={`${isOpen ? "hidden" : "block"} cursor-pointer`}
