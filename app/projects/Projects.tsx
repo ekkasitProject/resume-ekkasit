@@ -8,6 +8,7 @@ const Projects = () => {
   const [isHovered, setIsHovered] = useState({
     project1: false,
     project2: false,
+    project3: false,
   });
 
   const handleMouseEnter = (projectId: string) => {
@@ -39,14 +40,73 @@ const Projects = () => {
         </h3>
       </div>
 
+      <div className="flex flex-col-reverse md:flex-row justify-center p-5 my-5 bg-gray-100 mt-10 shadow-md rounded-lg">
+        <div className="w-full md:w-[450px] md:px-20 mt-5">
+          <h4 className="text-center text-lg font-bold">
+            🛍️ E-Commerce (October 2023)
+          </h4>
+
+          <p className="text-center text-neutral-500 mt-5">
+            Create an efficient and user-friendly online shopping platform for
+            clothing, featuring a convenient shopping cart, secure payment
+            system, and detailed product displays for a seamless and confident
+            shopping experience.
+          </p>
+
+          <div className=" flex justify-around mt-5">
+            <span className="p-2 w-[80px] text-center shadow-xl  bg-white rounded-lg">
+              Nextjs
+            </span>
+            <span className="p-2 w-[80px] text-center shadow-xl bg-white rounded-lg">
+              Prisma
+            </span>
+            <span className="p-2 w-[80px] text-center shadow-xl bg-white rounded-lg">
+              Stripe
+            </span>
+          </div>
+          <p className="p-2 w-full text-center shadow-xl mt-5 bg-red-800 text-white rounded-lg">
+            Currently developing
+          </p>
+          <div className=" flex justify-around mt-10 ">
+            <Link
+              href={"https://github.com/ekkasitProject/next-e-commerce.git"}
+              className=" w-[150px] flex justify-center items-center  hover:text-sky-600 ease-in-out"
+              target="_blank"
+            >
+              Code
+              <FiGithub className="text-2xl hover:text-sky-600 ease-in-out pl-2" />
+            </Link>
+            <Link
+              href={"https://ekkasit-e-commerce.vercel.app/"}
+              className=" w-[150px] flex justify-center items-center  hover:text-sky-600 ease-in-out"
+              target="_blank"
+            >
+              Live Demo
+              <FaExternalLinkAlt className="text-2xl hover:text-sky-600 ease-in-out pl-2" />
+            </Link>
+          </div>
+        </div>
+        <div className="w-auto md:w-[500px] h-[350px] relative overflow-hidden">
+          <div
+            className={`w-full h-full relative transition-transform duration-1000 ease-in-out transform ${
+              isHovered.project1 ? "translate-y-[-60%]" : "translate-y-0"
+            }`}
+            // onMouseEnter={() => handleMouseEnter("project1")}
+            // onMouseLeave={() => handleMouseLeave("project1")}
+          >
+            <Image src="/e-commerce.png" alt="" width={550} height={80} />
+          </div>
+        </div>
+      </div>
+
       <div className="flex flex-col md:flex-row justify-center p-5 my-5 bg-gray-100 mt-5 shadow-md rounded-lg">
         <div className="w-auto md:w-[500px] h-[350px] relative overflow-hidden">
           <div
             className={`w-full h-full relative transition-transform duration-1000 ease-in-out transform ${
-              isHovered.project1 ? "translate-y-[-140%]" : "translate-y-0"
+              isHovered.project2 ? "translate-y-[-140%]" : "translate-y-0"
             }`}
-            onMouseEnter={() => handleMouseEnter("project1")}
-            onMouseLeave={() => handleMouseLeave("project1")}
+            onMouseEnter={() => handleMouseEnter("project2")}
+            onMouseLeave={() => handleMouseLeave("project2")}
           >
             <Image src="/petsitter.png" alt="" width={550} height={80} />
           </div>
@@ -127,10 +187,10 @@ const Projects = () => {
         <div className="w-auto md:w-[500px] h-[350px] relative overflow-hidden">
           <div
             className={`w-full h-full relative transition-transform duration-1000 ease-in-out transform ${
-              isHovered.project2 ? "translate-y-[-60%]" : "translate-y-0"
+              isHovered.project3 ? "translate-y-[-60%]" : "translate-y-0"
             }`}
-            onMouseEnter={() => handleMouseEnter("project2")}
-            onMouseLeave={() => handleMouseLeave("project2")}
+            onMouseEnter={() => handleMouseEnter("project3")}
+            onMouseLeave={() => handleMouseLeave("project3")}
           >
             <Image src="/django.png" alt="" width={550} height={80} />
           </div>
