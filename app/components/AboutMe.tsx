@@ -3,7 +3,10 @@ import React from "react";
 import Image from "next/image";
 const AboutMe = () => {
   return (
-    <div className="md:w-[1000px] h-[500px] mx-auto mt-10  md:mt-32 md:h-[700px]">
+    <div
+      id="about"
+      className="md:w-[1000px] h-[500px] mx-auto mt-10  md:mt-32 md:h-[300px]"
+    >
       <div className="flex flex-col md:flex-row items-center md:justify-between p-5">
         <div className="w-[300px] md:w-[450px]">
           <Image src="/about.jpg" alt="" width={450} height={100} />

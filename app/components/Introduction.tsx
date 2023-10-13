@@ -4,9 +4,24 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineLinkedin } from "react-icons/ai";
 import { FiGithub } from "react-icons/fi";
+import {
+  BiLogoHtml5,
+  BiLogoCss3,
+  BiLogoTailwindCss,
+  BiLogoJavascript,
+  BiLogoTypescript,
+  BiLogoReact,
+  BiLogoNodejs,
+  BiLogoPostgresql,
+} from "react-icons/bi";
+import { TbBrandNextjs } from "react-icons/tb";
+import { SiExpress, SiPostman, SiPrisma, SiSupabase } from "react-icons/si";
 const Introduction = () => {
   return (
-    <div className=" w-full md:w-[1000px] mx-auto mt-32 p-2 md:h-[700px]">
+    <div
+      id="introduction"
+      className=" w-full md:w-[1000px] mx-auto mt-32 p-2 md:h-[500px]"
+    >
       <div className="flex flex-col md:flex-row justify-between items-center">
         <div className="text-center md:text-left mb-10 md:mb-0">
           <div className="flex items-center">
@@ -56,7 +71,7 @@ const Introduction = () => {
           />
         </div>
       </div>
-      <div className="flex flex-col  h-[50px] justify-center md:flex-row items-center mt-10 md:h-10">
+      <div className="flex flex-col justify-center md:flex-row items-center mt-10 md:h-10">
         <span>
           <h2 className="text-neutral-900 text-xl font-semibold pr-5 hidden md:block">
             Tech Stack |
@@ -67,57 +82,17 @@ const Introduction = () => {
             Tech Stack
           </h2>
         </span>
-        <span className="flex flex-wrap  w-[390px] px-2 justify-between mt-5 md:flex-nowrap md:w-[600px]  md:justify-between ">
-          <img
-            src="/html.png"
-            alt="html"
-            className="w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
-          />
-          <img
-            src="/css.png"
-            alt="css"
-            className="w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
-          />
-          <img
-            src="/tailwind.png"
-            alt="tailwind"
-            className="w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
-          />
-          <img
-            src="/javascript.png"
-            alt="javascript"
-            className="w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
-          />
-          <img
-            src="/typescript.png"
-            alt="typescript"
-            className="w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
-          />
-          <img
-            src="/reactjs.png"
-            alt="reactjs"
-            className="w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
-          />
-          <img
-            src="/nextjs.png"
-            alt="nextjs"
-            className="w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
-          />
-          <img
-            src="/nodejs.png"
-            alt="nodejs"
-            className="w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
-          />
-          <img
-            src="/express.png"
-            alt="express"
-            className="w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
-          />
-          <img
-            src="/postgresql.png"
-            alt="postgresql"
-            className="w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
-          />
+        <span className="flex flex-wrap  px-2 justify-between md:flex-nowrap md:w-[600px]  md:justify-between ">
+          <BiLogoHtml5 size={50} className="hover:text-sky-600" />
+          <BiLogoCss3 size={50} className="hover:text-sky-600" />
+          <BiLogoTailwindCss size={50} className="hover:text-sky-600" />
+          <BiLogoJavascript size={50} className="hover:text-sky-600" />
+          <BiLogoTypescript size={50} className="hover:text-sky-600" />
+          <BiLogoReact size={50} className="hover:text-sky-600" />
+          <TbBrandNextjs size={50} className="hover:text-sky-600" />
+          <BiLogoNodejs size={50} className="hover:text-sky-600" />
+          <SiExpress size={50} className="hover:text-sky-600" />
+          <BiLogoPostgresql size={50} className="hover:text-sky-600" />
         </span>
       </div>
       <div className="flex justify-center items-center my-10 h-10">
@@ -127,21 +102,9 @@ const Introduction = () => {
           </h2>
         </span>
         <span className="flex md:w-[300px] justify-around ">
-          <img
-            src="/postman.svg"
-            alt="postman"
-            className="w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
-          />
-          <img
-            src="/prisma.png"
-            alt="prisma"
-            className="w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
-          />
-          <img
-            src="/supabase.png"
-            alt="supabase"
-            className="w-[30px] h-[30px] md:w-[50px] md:h-[50px]"
-          />
+          <SiPostman size={50} className="hover:text-sky-600" />
+          <SiPrisma size={50} className="hover:text-sky-600" />
+          <SiSupabase size={50} className="hover:text-sky-600" />
         </span>
       </div>
     </div>

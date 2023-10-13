@@ -30,7 +30,10 @@ const Projects = () => {
   };
 
   return (
-    <div className="w-full md:w-3/5 mx-auto mt-8 md:mt-32">
+    <div
+      id="projects"
+      className="md:w-[1000px] mx-auto mt-32 h-auto md:h-[1350px]"
+    >
       <div>
         <h2 className="text-blue-700 text-2xl pl-2 md:pl-0 font-bold">
           PORTFOLIO
