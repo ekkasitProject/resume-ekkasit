@@ -20,7 +20,7 @@ const Navbar = () => {
           smooth={true}
           offset={-150}
           duration={50}
-          className="text-neutral-900 text-lg md:text-xl font-bold hover:text-sky-600 ease-in-out"
+          className="text-neutral-900 text-lg md:text-xl font-bold hover:text-sky-600 ease-in-out cursor-pointer"
         >
           Ekkasit.dev
         </Link>
@@ -34,7 +34,7 @@ const Navbar = () => {
             smooth={true}
             offset={-150}
             duration={50}
-            className="text-neutral-900 text-lg font-semibold hover:text-sky-600 ease-in-out"
+            className="text-neutral-900 text-lg font-semibold hover:text-sky-600 ease-in-out cursor-pointer"
           >
             Home
           </Link>
@@ -46,7 +46,7 @@ const Navbar = () => {
             smooth={true}
             offset={-150}
             duration={50}
-            className="text-neutral-900 text-lg font-semibold hover:text-sky-600 ease-in-out"
+            className="text-neutral-900 text-lg font-semibold hover:text-sky-600 ease-in-out cursor-pointer"
           >
             About
           </Link>
@@ -58,7 +58,7 @@ const Navbar = () => {
             smooth={true}
             offset={-100}
             duration={50}
-            className="text-neutral-900 text-lg font-semibold hover:text-sky-600 ease-in-out"
+            className="text-neutral-900 text-lg font-semibold hover:text-sky-600 ease-in-out cursor-pointer"
           >
             Projects
           </Link>
@@ -70,7 +70,7 @@ const Navbar = () => {
             smooth={true}
             offset={-70}
             duration={50}
-            className="text-neutral-900 text-lg font-semibold hover:text-sky-600 ease-in-out"
+            className="text-neutral-900 text-lg font-semibold hover:text-sky-600 ease-in-out cursor-pointer"
           >
             Contact
           </Link>
@@ -86,7 +86,7 @@ const Navbar = () => {
       <div
         className={`md:hidden ${
           isOpen
-            ? "fixed top-0 right-0 h-full w-full text-center  bg-white z-50 flex flex-col pt-20 px-4 border-l transition-all duration-1000 ease-in-out"
+            ? "fixed top-0 right-0 h-full w-full text-center  bg-white z-50 flex flex-col pt-20 px-4 border-l transition-all duration-1000 ease-in-out cursor-pointer"
             : "hidden"
         }`}
       >
