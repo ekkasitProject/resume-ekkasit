@@ -14,16 +14,16 @@ const AboutMe = () => {
         <div className="text-center md:w-[450px]">
           <h2 className="mt-5 text-blue-700 text-2xl font-bold">ABOUT ME</h2>
           <h3 className="text-neutral-900 text-xl font-bold mt-5">
-            A dedicated Fullstack Developer based in Nakhon Ratchasima, Thailand
-            📍
+            A dedicated Fullstack Developer based in Muangthong Nonthaburi, Thailand 📍
           </h3>
           <p className="text-neutral-500 mt-5 ">
-            As a junior fullstack developer, I have impressive skills in using
-            Node.js, Express, and Next.js. I specialize in designing and
-            developing websites that offer a user-friendly and smooth
-            experience. My expertise lies in creating dynamic and engaging
-            interfaces through writing clean code and utilizing modern
-            development techniques and tools.
+            As a junior fullstack developer with 1 year of experience, I possess
+            strong skills in Node.js, Express, Next.js, Flutter, Golang, and
+            AWS. I specialize in designing and developing websites and
+            applications that offer a user-friendly and seamless experience. My
+            expertise lies in creating dynamic and engaging interfaces, along
+            with utilizing modern development techniques and tools to meet user
+            needs effectively.
           </p>
         </div>
       </div>

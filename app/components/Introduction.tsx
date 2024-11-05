@@ -13,9 +13,12 @@ import {
   BiLogoReact,
   BiLogoNodejs,
   BiLogoPostgresql,
+  BiLogoGoLang,
+  BiLogoFlutter,
+  BiLogoMongodb,
 } from "react-icons/bi";
 import { TbBrandNextjs } from "react-icons/tb";
-import { SiExpress, SiPostman, SiPrisma, SiSupabase } from "react-icons/si";
+import { SiApachekafka, SiDocker, SiExpress, SiFirebase, SiPostman, SiPrisma, SiSupabase } from "react-icons/si";
 const Introduction = () => {
   return (
     <div
@@ -40,7 +43,7 @@ const Introduction = () => {
             <div className="mt-10">
               <span className="text-xl text-gray-600">
                 Hi, I&apos;m Ekkasit ponkhunthod, Fullstack <br /> Developer in
-                Nakhon Ratchasima, Thailand. 📍
+                Muangthong Nonthaburi, Thailand. 📍
               </span>
             </div>
             <div className="flex mt-10 md:mt-0  md:w-[100px] justify-around">
@@ -82,29 +85,33 @@ const Introduction = () => {
             Tech Stack
           </h2>
         </span>
-        <span className="flex flex-wrap  px-2 justify-between md:flex-nowrap md:w-[600px]  md:justify-between ">
-          <BiLogoHtml5 size={50} className="hover:text-sky-600" />
-          <BiLogoCss3 size={50} className="hover:text-sky-600" />
-          <BiLogoTailwindCss size={50} className="hover:text-sky-600" />
-          <BiLogoJavascript size={50} className="hover:text-sky-600" />
-          <BiLogoTypescript size={50} className="hover:text-sky-600" />
-          <BiLogoReact size={50} className="hover:text-sky-600" />
-          <TbBrandNextjs size={50} className="hover:text-sky-600" />
-          <BiLogoNodejs size={50} className="hover:text-sky-600" />
-          <SiExpress size={50} className="hover:text-sky-600" />
-          <BiLogoPostgresql size={50} className="hover:text-sky-600" />
+        <span className="flex flex-wrap   px-2 justify-center md:flex-nowrap md:w-[700px]  md:justify-between ">
+          <BiLogoHtml5 size={70} className="hover:text-sky-600 px-2" />
+          <BiLogoCss3 size={70} className="hover:text-sky-600 px-2" />
+          <BiLogoTailwindCss size={70} className="hover:text-sky-600 px-2" />
+          <BiLogoGoLang size={70} className="hover:text-sky-600 px-2" />
+          <BiLogoFlutter size={70} className="hover:text-sky-600 px-2" />
+          <BiLogoJavascript size={70} className="hover:text-sky-600 px-2" />
+          <BiLogoReact size={70} className="hover:text-sky-600 px-2" />
+          <TbBrandNextjs size={70} className="hover:text-sky-600 px-2" />
+          <BiLogoNodejs size={70} className="hover:text-sky-600 px-2" />
+          <BiLogoPostgresql size={70} className="hover:text-sky-600 px-2" />
+          <BiLogoMongodb size={70} className="hover:text-sky-600 px-2" />
+          
         </span>
       </div>
-      <div className="flex justify-center items-center my-10 h-10">
+      <div className="flex flex-col justify-center md:flex-row items-center mt-10 md:h-10">
         <span>
           <h2 className="text-neutral-900 text-xl font-semibold pr-5">
             Tools |
           </h2>
         </span>
-        <span className="flex md:w-[300px] justify-around ">
-          <SiPostman size={50} className="hover:text-sky-600" />
-          <SiPrisma size={50} className="hover:text-sky-600" />
-          <SiSupabase size={50} className="hover:text-sky-600" />
+        <span className="flex flex-wrap   px-2 justify-center md:flex-nowrap md:w-[400px]  md:justify-between ">
+          <SiPostman size={70} className="hover:text-sky-600 px-2" />
+          <SiDocker size={70} className="hover:text-sky-600 px-2" />
+          <SiFirebase size={70} className="hover:text-sky-600 px-2" />
+          <SiPrisma size={70} className="hover:text-sky-600 px-2" />
+          <SiSupabase size={70} className="hover:text-sky-600 px-2" />
         </span>
       </div>
     </div>

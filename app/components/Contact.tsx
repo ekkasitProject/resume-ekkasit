@@ -7,7 +7,12 @@ const Contact = () => {
     {
       icon: <GrMapLocation className="text-3xl" />,
       title: "Location",
-      content: "Nakhon Ratchasima, Thailand",
+      content: (
+        <a href="https://maps.app.goo.gl/AhDkqsxXXTespgAL6" target="_blank">
+          Muangthong Nonthaburi, Thailand
+        </a>
+      ),
+      
     },
     {
       icon: <AiOutlineMail className="text-3xl" />,
